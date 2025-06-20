@@ -1,0 +1,17 @@
+[
+{"language": "Java", "question": "What is the entry point of a Java application?", "options": ["start()", "main()", "run()", "init()"], "answer": "main()"},
+  {"language": "Java", "question": "Which keyword is used to create a class?", "options": ["Class", "define", "class", "structure"], "answer": "class"},
+  {"language": "Java", "question": "Which of the following is not a primitive data type?", "options": ["int", "String", "float", "boolean"], "answer": "String"},
+  {"language": "Java", "question": "What is used to inherit a class in Java?", "options": ["inherits", "extends", "implement", "super"], "answer": "extends"},
+  {"language": "Java", "question": "Which access modifier makes a member visible to all classes?", "options": ["protected", "public", "private", "default"], "answer": "public"},
+  {"language": "Java", "question": "Which keyword is used to define a constant in Java?", "options": ["const", "static", "final", "constant"], "answer": "final"},
+  {"language": "Java", "question": "Which package contains the Scanner class?", "options": ["java.util", "java.io", "java.lang", "java.scan"], "answer": "java.util"},
+  {"language": "Java", "question": "Which loop is guaranteed to execute at least once?", "options": ["while", "do-while", "for", "none"], "answer": "do-while"},
+  {"language": "Java", "question": "Which keyword is used for interfaces?", "options": ["interface", "abstract", "extends", "implements"], "answer": "interface"},
+  {"language": "Java", "question": "What does JVM stand for?", "options": ["Java Virtual Module", "Java Variable Machine", "Java Virtual Machine", "Java Verified Machine"], "answer": "Java Virtual Machine"},
+  {"language": "Java", "question": "Which operator is used for concatenation?", "options": ["+", "&", "%", "*"], "answer": "+"},
+  {"language": "Java", "question": "Which exception is thrown when array index is out of bound?", "options": ["IndexError", "IndexOutOfBoundsException", "ArrayBoundError", "OutOfRangeException"], "answer": "IndexOutOfBoundsException"},
+  {"language": "Java", "question": "Which keyword is used to inherit interfaces?", "options": ["extends", "inherits", "implements", "uses"], "answer": "implements"},
+  {"language": "Java", "question": "Which method can be used to read input from console?", "options": ["read()", "scan()", "Scanner.nextLine()", "input()"], "answer": "Scanner.nextLine()"},
+  {"language": "Java", "question": "Which class is the parent of all classes in Java?", "options": ["Main", "Super", "Object", "Base"], "answer": "Object"}
+]

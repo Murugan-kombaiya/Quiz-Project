@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Online Quiz App</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+                color: #ecf0f1;
+                background-image: url('sample1.avif');
+                background-size: cover;
+                background-position: center;
+                backdrop-filter: blur(4px);
+            }
+
+            .container {
+                max-width: 750px;
+                margin: 30px auto;
+                background-color: rgba(0, 0, 0, 0.85);
+                padding: 40px 30px;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.75);
+                animation: fadeIn 1s ease-in;
+                line-height: 1.6;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 3rem;
+                margin-bottom: 15px;
+            }
+
+            .description, .benefits {
+                text-align: center;
+                font-size: 1.2rem;
+                margin: 20px 0;
+                padding: 0 10px;
+            }
+
+            select {
+                display: block;
+                margin: 15px auto;
+                padding: 12px 30px;
+                border-radius: 10px;
+                border: none;
+                font-size: 1.05rem;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+                background-color: #2d3436;
+                color: #ecf0f1;
+                cursor: pointer;
+                appearance: none;
+                background-image: linear-gradient(45deg, #00cec9, #0984e3);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                transition: transform 0.2s ease;
+            }
+
+            select:hover {
+                transform: scale(1.03);
+            }
+
+            #start-btn {
+                background-color: #00cec9;
+                color: white;
+                cursor: pointer;
+                transition: background 0.3s ease;
+                padding: 12px 24px;
+                font-size: 1.05rem;
+                border-radius: 10px;
+                border: none;
+                display: block;
+                margin: 10px auto;
+            }
+
+            #start-btn:hover {
+                background-color: #009e9d;
+            }
+
+            .instructions, .benefits {
+                background-color: #34495e;
+                padding: 20px;
+                border-radius: 12px;
+                font-size: 1rem;
+                margin-top: 25px;
+            }
+
+            .instructions ul {
+                padding-left: 20px;
+                margin-top: 10px;
+            }
+
+            .progress-bar-container {
+                width: 100%;
+                background-color: #2c3e50;
+                height: 16px;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-bottom: 20px;
+                border: 2px solid #00cec9;
+            }
+
+            #progress-bar {
+                height: 100%;
+                width: 0;
+                background: linear-gradient(90deg, #00cec9, #0984e3);
+                transition: width 0.6s ease-in-out;
+                border-radius: 8px 0 0 8px;
+            }
+
+            .lang-icon {
+                width: 70px;
+                display: block;
+                margin: 0 auto 15px;
+                animation: fadeIn 0.8s ease;
+            }
+
+            .question-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 25px 0;
+                flex-wrap: wrap;
+            }
+
+            .timer {
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: #f1c40f;
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+
+            #options-list {
+                list-style: none;
+                padding: 0;
+            }
+
+            #options-list li {
+                background: #34495e;
+                margin: 12px 0;
+                padding: 14px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background 0.3s;
+                font-size: 1.1rem;
+            }
+
+            #options-list li:hover {
+                background: #3d5a73;
+            }
+
+            #result-section {
+                text-align: center;
+                padding: 25px;
+                animation: fadeIn 1s ease-in;
+            }
+
+            #score-text {
+                font-size: 1.8rem;
+                margin-top: 20px;
+                color: #00cec9;
+            }
+
+            #feedback-text {
+                font-size: 1.2rem;
+                margin-top: 15px;
+                color: #ffffff;
+                animation: fadeIn 1s ease-in;
+            }
+
+            #result-section p::before {
+                content: '🎯 ';
+            }
+
+            #result-section button {
+                background-color: #6c5ce7;
+                color: white;
+                font-weight: bold;
+                padding: 14px 26px;
+                font-size: 1.1rem;
+                margin-top: 25px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+            }
+
+            #result-section button:hover {
+                background-color: #4b3ec6;
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: scale(0.85);
+                }
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>🔥 Programming Quiz</h1>
+                <p class="description">
+                    Test your programming skills with our interactive
+                    quiz!<br />
+                    Select your language, answer 15 questions, and beat the
+                    timer. Learn and have fun!
+                </p>
+                <p class="benefits">
+                    ✅ Boost your coding knowledge<br />
+                    ✅ Prepare for interviews and exams<br />
+                    ✅ Improve your time management<br />
+                    ✅ Sharpen logical thinking
+                </p>
+                <select id="language-select">
+                    <option value="Python">🐍 Python</option>
+                    <option value="Java">☕ Java</option>
+                    <option value="C++">💻 C++</option>
+                </select>
+                <button id="start-btn">Start Quiz</button>
+                <div class="instructions">
+                    <strong>Instructions:</strong>
+                    <ul>
+                        <li>Choose your programming language from the
+                            dropdown.</li>
+                        <li>Each quiz contains 15 multiple-choice
+                            questions.</li>
+                        <li>You have 30 seconds per question to answer.</li>
+                        <li>Correct answers earn points. Try to get the highest
+                            score!</li>
+                        <li>Click "Next" to move to the next question after
+                            answering.</li>
+                    </ul>
+                </div>
+            </header>
+
+            <main id="quiz-section" class="hidden">
+                <div class="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <img id="lang-icon" src alt="Language Icon"
+                    class="lang-icon hidden" />
+                <div class="question-header">
+                    <h2 id="question-text"></h2>
+                    <div class="timer">Time Left: <span
+                            id="timer">30</span>s</div>
+                </div>
+                <ul id="options-list" class="options"></ul>
+                <button id="next-btn" disabled>Next</button>
+            </main>
+
+            <section id="result-section" class="hidden">
+                <h2>🎉 Your Result</h2>
+                <p id="score-text"></p>
+                <div id="feedback-text"></div>
+                <button onclick="location.reload()">Play Again 🔁</button>
+            </section>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

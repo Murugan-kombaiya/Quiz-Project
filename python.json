@@ -1,0 +1,17 @@
+[
+  {"language": "Python", "question": "Which keyword is used to define a function in Python?", "options": ["function", "define", "def", "lambda"], "answer": "def"},
+  {"language": "Python", "question": "What is the output of: print(type([]))?", "options": ["<class 'list'>", "list", "<list>", "Array"], "answer": "<class 'list'>"},
+  {"language": "Python", "question": "Which of these is an immutable data type in Python?", "options": ["list", "set", "tuple", "dict"], "answer": "tuple"},
+  {"language": "Python", "question": "How do you start a comment in Python?", "options": ["//", "#", "--", "/*"], "answer": "#"},
+  {"language": "Python", "question": "Which built-in function returns the length of a list?", "options": ["count()", "length()", "len()", "size()"], "answer": "len()"},
+  {"language": "Python", "question": "Which operator is used for exponentiation?", "options": ["^", "**", "//", "%"], "answer": "**"},
+  {"language": "Python", "question": "Which of these is NOT a valid Python data type?", "options": ["string", "float", "int", "real"], "answer": "real"},
+  {"language": "Python", "question": "What does the 'append()' method do in a list?", "options": ["Adds an item", "Deletes an item", "Sorts the list", "Removes duplicates"], "answer": "Adds an item"},
+  {"language": "Python", "question": "Which loop is used when the number of iterations is unknown?", "options": ["for", "foreach", "while", "loop"], "answer": "while"},
+  {"language": "Python", "question": "What is the result of 5 // 2?", "options": ["2.5", "3", "2", "2.0"], "answer": "2"},
+  {"language": "Python", "question": "Which module is used to generate random numbers?", "options": ["math", "os", "random", "numbers"], "answer": "random"},
+  {"language": "Python", "question": "How do you create a dictionary?", "options": ["{}", "[]", "()", "<>"], "answer": "{}"},
+  {"language": "Python", "question": "What is the keyword to define a class?", "options": ["object", "class", "define", "def"], "answer": "class"},
+  {"language": "Python", "question": "Which keyword is used for error handling?", "options": ["catch", "try", "throw", "error"], "answer": "try"},
+  {"language": "Python", "question": "Which method returns the largest item from a list?", "options": ["max()", "top()", "largest()", "biggest()"], "answer": "max()"}
+]

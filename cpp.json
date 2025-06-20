@@ -1,0 +1,17 @@
+[
+    {"language": "C++", "question": "Which of the following is the correct syntax for main function?", "options": ["int main()", "main()", "void main()", "function main()"], "answer": "int main()"},
+  {"language": "C++", "question": "Which symbol is used for comments in C++?", "options": ["//", "#", "/* */", "--"], "answer": "//"},
+  {"language": "C++", "question": "Which header file is required for input/output in C++?", "options": ["iostream", "stdio.h", "conio.h", "string"], "answer": "iostream"},
+  {"language": "C++", "question": "What is the use of 'new' keyword in C++?", "options": ["To create new class", "To allocate memory", "To delete object", "To call a function"], "answer": "To allocate memory"},
+  {"language": "C++", "question": "Which keyword is used to define a class in C++?", "options": ["struct", "define", "class", "object"], "answer": "class"},
+  {"language": "C++", "question": "What is the default access specifier for class members?", "options": ["private", "public", "protected", "static"], "answer": "private"},
+  {"language": "C++", "question": "Which of the following is not a loop structure in C++?", "options": ["do-while", "while", "repeat", "for"], "answer": "repeat"},
+  {"language": "C++", "question": "Which operator is used for pointer dereferencing?", "options": ["*", "&", "->", "%"], "answer": "*"},
+  {"language": "C++", "question": "Which feature allows functions with same name but different parameters?", "options": ["Overloading", "Inheritance", "Encapsulation", "Polymorphism"], "answer": "Overloading"},
+  {"language": "C++", "question": "What does 'cin' represent in C++?", "options": ["Output stream", "Input stream", "Class name", "None"], "answer": "Input stream"},
+  {"language": "C++", "question": "What does STL stand for?", "options": ["Standard Template Library", "System Template List", "Standard Type Library", "Structured Type List"], "answer": "Standard Template Library"},
+  {"language": "C++", "question": "What is used to access members of a structure?", "options": ["*", "&", ".", "->"], "answer": "."},
+  {"language": "C++", "question": "Which function is used to allocate dynamic memory?", "options": ["malloc", "alloc", "new", "create"], "answer": "new"},
+  {"language": "C++", "question": "Which keyword is used to prevent inheritance?", "options": ["sealed", "stop", "final", "private"], "answer": "final"},
+  {"language": "C++", "question": "Which of the following is used for exception handling in C++?", "options": ["try-catch", "if-else", "goto", "assert"], "answer": "try-catch"}
+]
